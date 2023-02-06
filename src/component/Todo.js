@@ -36,7 +36,7 @@ function Todo() {
         <div className=" center">
           <div className="pt-2.5 pb-2.5 ">
             <h4 className=" font-serif text-center text-black rounded font-bold text-3xl">
-              <span className="bg-white rounded-2xl px-5 shadow-xl border-2 border-black font-sans">
+              <span className="bg-white rounded-3xl sm:rounded-2xl px-5 py-2 sm:py-0 shadow-xl border-2 border-black font-sans">
                 To-Do List
               </span>
             </h4>
@@ -48,7 +48,7 @@ function Todo() {
               <input
                 id="todo-input"
                 type="text"
-                className="form-control border-[2px] shadow-lg shadow-gray-500 rounded-2xl px-5 border-black w-full h-10 text-lg font-mono"
+                className="form-control border-[2px] sm:tracking-normal tracking-tighter shadow-lg shadow-gray-500 rounded-2xl px-5 border-black w-full h-10 text-lg font-mono"
                 value={task}
                 onChange={onChangeHandler}
                 placeholder="Add your task"
@@ -56,7 +56,7 @@ function Todo() {
             </div>
             <button
               type="submit"
-              className="mx-auto  bg-[#073b4c] font-bold shadow-lg  shadow-gray-500 text-white px-8 mr-4 rounded-2xl  hover:bg-white hover:text-black"
+              className="mx-auto bg-[#073b4c] font-bold shadow-lg  shadow-gray-500 text-white px-8 mr-4 rounded-2xl  hover:bg-white hover:text-black"
             >
               Add
             </button>
